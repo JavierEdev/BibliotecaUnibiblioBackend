@@ -29,5 +29,5 @@ BEGIN
         ,[tipoIdentificador]
         ,[idArea]
     FROM [UNB_Q01].[dbo].[libros]
-    WHERE [nombre] = @nombre;
+    WHERE [nombre]  LIKE '%' + @nombre + '%';
 END;
