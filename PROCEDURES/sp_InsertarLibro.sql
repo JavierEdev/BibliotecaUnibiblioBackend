@@ -9,7 +9,7 @@ IF EXISTS
      AND name = 'sp_InsertarLibro'
  )
 BEGIN
-   DROP PROCEDURE sp_SelectLibros
+   DROP PROCEDURE sp_InsertarLibro
 END
 GO
 CREATE PROCEDURE sp_InsertarLibro
