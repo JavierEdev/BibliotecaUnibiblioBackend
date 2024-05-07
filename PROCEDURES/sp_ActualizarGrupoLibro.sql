@@ -6,10 +6,10 @@ IF EXISTS
      SELECT TOP 1 1
      FROM sysobjects
      WHERE type = 'P'
-     AND name = 'sp_EliminarGrupoLibro'
+     AND name = 'sp_ActualizarGrupoLibro'
  )
 BEGIN
-   DROP PROCEDURE sp_EliminarGrupoLibro
+   DROP PROCEDURE sp_ActualizarGrupoLibro
 END
 GO
 CREATE PROCEDURE sp_ActualizarGrupoLibro
