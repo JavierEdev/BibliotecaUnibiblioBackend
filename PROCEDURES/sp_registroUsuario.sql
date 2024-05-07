@@ -20,7 +20,7 @@ CREATE PROCEDURE sp_registroUsuario
 @segundoApellido VARCHAR(100),
 @dpi             VARCHAR(50),
 @telefono        VARCHAR(50) = '',
-@correo          VARCHAR(100) = '',
+@correo          NVARCHAR(MAX) = '',
 @direccion       VARCHAR(100) = '',
 @rol             INT,
 @contrasena      VARCHAR(MAX)
@@ -52,7 +52,7 @@ BEGIN
         )
         VALUES
         (
-         @primerApellido,
+         @primerNombre,
          @segundoNombre,
          @primerApellido,
          @segundoApellido,
