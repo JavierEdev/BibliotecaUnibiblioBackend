@@ -6,13 +6,13 @@ IF EXISTS
      SELECT TOP 1 1
      FROM sysobjects
      WHERE type = 'P'
-     AND name = 'sp_verUsuarios'
+     AND name = 'sp_verUsuariosColaboradores'
  )
 BEGIN
-   DROP PROCEDURE sp_verUsuarios
+   DROP PROCEDURE sp_verUsuariosColaboradores
 END
 GO
-CREATE PROCEDURE sp_verUsuarios
+CREATE PROCEDURE sp_verUsuariosColaboradores
 AS
 BEGIN
     SELECT u.idUsuario AS Id,
@@ -29,5 +29,5 @@ BEGIN
                         WHERE u.idUsuario = s2.idUsuario
                           AND s2.estatus = 1
                       )
-      AND u.idRol IN (2,3)
+      AND u.idRol IN (4,5)
 END

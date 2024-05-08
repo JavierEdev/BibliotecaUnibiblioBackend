@@ -12,3 +12,4 @@ ALTER TABLE registroDetalle ADD fechaCrea DATETIME
 
 --Alteraciones Suspensiones
 ALTER TABLE suspensiones ADD fechaCrea DATETIME
+ALTER TABLE suspensiones ADD idUsuario INT
