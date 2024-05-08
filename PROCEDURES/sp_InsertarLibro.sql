@@ -15,7 +15,7 @@ GO
 CREATE PROCEDURE sp_InsertarLibro
     @nombre NVARCHAR(100),
     @autor NVARCHAR(100),
-    @anioPublicacion INT,
+    @anioPublicacion Datetime,
     @grupoLibro INT,
     @enStock INT,
     @estado INT,
