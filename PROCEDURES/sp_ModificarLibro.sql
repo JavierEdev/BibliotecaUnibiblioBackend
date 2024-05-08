@@ -16,7 +16,7 @@ CREATE PROCEDURE sp_ModificarLibro
     @idLibro INT,
     @nombre NVARCHAR(100),
     @autor NVARCHAR(100),
-    @anioPublicacion INT,
+    @anioPublicacion DATETIME,
     @grupoLibro INT,
     @enStock INT,
     @estado INT,
