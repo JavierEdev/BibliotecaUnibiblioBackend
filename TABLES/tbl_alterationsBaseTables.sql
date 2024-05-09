@@ -19,3 +19,7 @@ ALTER TABLE grupoLibro ADD estado INT
 
 --Alteraciones Tematica
 ALTER TABLE areaTematica ADD estado INT
+
+--Eliminacion de PK
+ALTER TABLE registroMaestro DROP CONSTRAINT fk_registroMaestroSuspensiones
+ALTER TABLE suspensiones DROP CONSTRAINT pk_suspensiones
