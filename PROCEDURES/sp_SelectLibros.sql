@@ -27,6 +27,7 @@ BEGIN
         [estado],
         [tipoIdentificador],
         [idArea]
-    FROM 
-        [UNB_Q01].[dbo].[libros];
+    FROM
+        [UNB_Q01].[dbo].[libros]
+    WHERE estado NOT IN (2)
 END;

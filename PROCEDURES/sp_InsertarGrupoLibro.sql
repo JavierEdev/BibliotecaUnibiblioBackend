@@ -16,6 +16,6 @@ CREATE PROCEDURE sp_InsertarGrupoLibro
     @descripcion NVARCHAR(100)
 AS
 BEGIN
-    INSERT INTO [UNB_Q01].[dbo].[grupoLibro] ([descripcion])
-    VALUES (@descripcion);
+    INSERT INTO [UNB_Q01].[dbo].[grupoLibro] ([descripcion],estado)
+    VALUES (@descripcion,1);
 END;

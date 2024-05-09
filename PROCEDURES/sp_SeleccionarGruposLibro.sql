@@ -16,5 +16,6 @@ CREATE PROCEDURE sp_SeleccionarGruposLibro
 AS
 BEGIN
     SELECT [idGrupoLibro], [descripcion]
-    FROM [UNB_Q01].[dbo].[grupoLibro];
+    FROM [UNB_Q01].[dbo].[grupoLibro]
+    WHERE estado NOT IN (2)
 END;

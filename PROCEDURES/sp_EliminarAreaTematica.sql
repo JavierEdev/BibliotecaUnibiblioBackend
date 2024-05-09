@@ -16,6 +16,6 @@ CREATE PROCEDURE sp_EliminarAreaTematica
     @idArea INT
 AS
 BEGIN
-    DELETE FROM [UNB_Q01].[dbo].[areaTematica]
+    UPDATE areaTematica SET estado = 2
     WHERE [idArea] = @idArea;
 END;

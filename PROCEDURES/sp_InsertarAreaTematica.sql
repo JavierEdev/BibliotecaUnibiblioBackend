@@ -16,6 +16,6 @@ CREATE PROCEDURE sp_InsertarAreaTematica
     @descripcion NVARCHAR(100)
 AS
 BEGIN
-    INSERT INTO [UNB_Q01].[dbo].[areaTematica] ([descripcion])
-    VALUES (@descripcion);
+    INSERT INTO [UNB_Q01].[dbo].[areaTematica] ([descripcion],estado)
+    VALUES (@descripcion,1);
 END;

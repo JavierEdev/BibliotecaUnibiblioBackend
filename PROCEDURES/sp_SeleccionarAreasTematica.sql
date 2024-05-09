@@ -16,5 +16,6 @@ CREATE PROCEDURE sp_SeleccionarAreasTematica
 AS
 BEGIN
     SELECT [idArea], [descripcion]
-    FROM [UNB_Q01].[dbo].[areaTematica];
+    FROM [UNB_Q01].[dbo].[areaTematica]
+    WHERE estado NOT IN (2)
 END;

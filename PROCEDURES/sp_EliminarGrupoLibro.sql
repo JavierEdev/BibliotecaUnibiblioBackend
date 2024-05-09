@@ -17,6 +17,6 @@ CREATE PROCEDURE sp_EliminarGrupoLibro
     @idGrupoLibro INT
 AS
 BEGIN
-    DELETE FROM [UNB_Q01].[dbo].[grupoLibro]
+    UPDATE grupoLibro SET estado = 2
     WHERE [idGrupoLibro] = @idGrupoLibro;
 END;

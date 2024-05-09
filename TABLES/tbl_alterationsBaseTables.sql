@@ -13,3 +13,9 @@ ALTER TABLE registroDetalle ADD fechaCrea DATETIME
 --Alteraciones Suspensiones
 ALTER TABLE suspensiones ADD fechaCrea DATETIME
 ALTER TABLE suspensiones ADD idUsuario INT
+
+--Alteraciones Grupos
+ALTER TABLE grupoLibro ADD estado INT
+
+--Alteraciones Tematica
+ALTER TABLE areaTematica ADD estado INT

@@ -16,6 +16,6 @@ CREATE PROCEDURE sp_EliminarLibro
     @idLibro INT
 AS
 BEGIN
-    DELETE FROM [UNB_Q01].[dbo].[libros]
-    WHERE [idLibro] = @idLibro;
+   UPDATE libros SET estado = 2
+    WHERE [idLibro] = @idLibro
 END;
