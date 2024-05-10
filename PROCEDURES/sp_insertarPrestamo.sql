@@ -23,7 +23,7 @@ BEGIN
 DECLARE @idUsuario INT = (SELECT idUsuario FROM usuarios WHERE @correoUsuario = correoElectronico)
 DECLARE @nuevoEncabezado UNIQUEIDENTIFIER = NEWID()
 
-    INSERT INTO registroMaestro
+INSERT INTO registroMaestro
 (
  idUsuario,
  guidRegistroDetalle,
@@ -58,5 +58,4 @@ VALUES
  @idLibro,
  GETDATE()
 )
-
 END

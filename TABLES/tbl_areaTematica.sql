@@ -10,7 +10,7 @@ IF NOT EXISTS
  )
  BEGIN
      CREATE TABLE areaTematica (
-                                 idArea      INT IDENTITY (1,1),
+                                 idArea      INT IDENTITY (1,10),
                                  descripcion VARCHAR(256),
                                  CONSTRAINT pk_areaTematica PRIMARY KEY (idArea)
                                 )
