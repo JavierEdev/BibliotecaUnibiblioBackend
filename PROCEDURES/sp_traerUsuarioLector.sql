@@ -6,14 +6,14 @@ IF EXISTS
      SELECT TOP 1 1
      FROM sysobjects
      WHERE type = 'P'
-     AND name = 'sp_traerUsuario'
+     AND name = 'sp_traerUsuarioLector'
  )
 BEGIN
-   DROP PROCEDURE sp_traerUsuario
+   DROP PROCEDURE sp_traerUsuarioLector
 END
 GO
 
-CREATE PROCEDURE sp_traerUsuario
+CREATE PROCEDURE sp_traerUsuarioLector
 @usuario VARCHAR(MAX) = '',
 @password VARCHAR(MAX) = ''
 AS
@@ -24,5 +24,6 @@ BEGIN
                contrasena AS password
           FROM usuarios
         WHERE correoElectronico = @usuario
+          AND idRol IN (2,3,4)
     END
 END
