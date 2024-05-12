@@ -1,3 +1,5 @@
+use UNB_Q01
+go
 --Alteracion usuarios
 ALTER TABLE usuarios ADD contrasena VARCHAR(500)
 ALTER TABLE usuarios ADD fechaCrea DATETIME
