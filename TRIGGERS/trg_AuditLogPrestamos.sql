@@ -1,3 +1,5 @@
+use UNB_Q01
+GO
 CREATE TRIGGER trg_AuditLogPrestamos
 ON registroMaestro
 AFTER INSERT, UPDATE, DELETE

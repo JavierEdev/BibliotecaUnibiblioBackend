@@ -1,3 +1,5 @@
+use UNB_Q01
+GO
 CREATE TRIGGER trg_AuditLog
 ON usuarios
 AFTER INSERT, UPDATE, DELETE

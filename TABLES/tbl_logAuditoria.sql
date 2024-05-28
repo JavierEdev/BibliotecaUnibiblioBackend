@@ -1,3 +1,5 @@
+use UNB_Q01
+GO
 CREATE TABLE logAuditoriaUsuarios (
    IdEntrada     INT IDENTITY(1,1) PRIMARY KEY,
    NombreTabla   NVARCHAR(100),
@@ -7,4 +9,3 @@ CREATE TABLE logAuditoriaUsuarios (
    fechaOperacion DATETIME DEFAULT GETDATE(),
    usuarioModifica NVARCHAR(MAX)
 )
-GO
